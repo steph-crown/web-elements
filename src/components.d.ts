@@ -22,7 +22,6 @@ export namespace Components {
     }
     interface WebButton {
         "disabled": boolean;
-        "text": string;
         "type": 'button' | 'submit' | 'reset';
     }
 }
@@ -61,7 +60,6 @@ declare namespace LocalJSX {
     }
     interface WebButton {
         "disabled"?: boolean;
-        "text"?: string;
         "type"?: 'button' | 'submit' | 'reset';
     }
     interface IntrinsicElements {

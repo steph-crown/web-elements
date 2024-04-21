@@ -11,6 +11,9 @@
   <body>
     <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
 
-    <web-button text="Click me" type="button" disabled="false"></web-button>
+    <web-button type="button" disabled="false" onclick="window.alert('alau')">
+      <div slot="before">Click</div>
+      <div slot="after">Me</div>
+    </web-button>
   </body>
 </html>

@@ -10,12 +10,12 @@ export class WebButton {
 
   @Prop() disabled: boolean = false;
 
-  @Prop() text: string;
-
   render() {
     return (
       <button type={this.type} disabled={this.disabled}>
-        {this.text}
+        <slot name="before"></slot>
+        main
+        <slot name="after"></slot>
       </button>
     );
   }
